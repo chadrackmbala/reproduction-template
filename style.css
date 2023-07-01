@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    color: white;
+    /* font-size: 30px; */
+    font-family: 'Poppins', sans-serif;
+}
+.first-section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 2;
+}
+.left {
+    background-color: rgb(10,27,137);
+    grid-column: 1/1;
+    grid-row: 1;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.icons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icons .icon {
+    margin: 0 100px;
+}
+.phrase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.phrase p {
+    font-size: 15px;
+    color: rgb(247,148,29);
+}
+.middle {
+    background-color: rgb(247,148,29);
+    grid-column: 2/5;
+    grid-row: 1;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.middle .links-first-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.middle .links-first-section a {
+    color: #fff;
+    padding: 10px 60px;
+}
+
+.first-link {
+    background-color: rgb(10,27,137);
+    box-shadow: -4px 7px 5px  rgb(10,27,150);
+    transition: all 300ms;
+}
+.first-link:hover {
+    background-color: rgb(247,148,29);
+    box-shadow: 4px -7px 5px  rgb(247,148,70);
+    transition: all 300ms;
+}
+.second-link {
+    background-color: rgb(247,148,29);
+    transition: all 300ms;
+}
+.second-link:hover {
+    background-color: rgb(10,27,137);
+    box-shadow: 4px -7px 5px  rgb(247,148,70);
+    transition: all 300ms;
+}
+.right {
+    background-color: darkred;
+    grid-column: 5/13;
+    grid-row: 1;
+    height: 80hv;
+    background-image: url('Images/bg-right.jpg');
+    background-size: cover;
+    /* object-fit: contain; */
+}
+.bottom {
+    background-color: rgb(10,27,137);
+    grid-column: span 12;
+    grid-row: 2;
+    height: 100vh;
+    z-index: -1;
+}
+.second-section {
+    background-color: darkcyan;
+    height: 100vh;
+}
