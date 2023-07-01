@@ -27,9 +27,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
-.icons .icon {
-    margin: 0 100px;
+.icons-container .icon {
+    cursor: pointer;
 }
 .phrase {
     display: flex;
@@ -59,28 +60,37 @@ body {
     color: #fff;
     padding: 10px 60px;
 }
-
+.middle div h3 {
+    margin-top: 50px;
+}
+.middle .title {
+    display: flex;
+    justify-content: center;
+}
+.middle div h1 {
+    width: 20%;
+}
 .first-link {
     background-color: rgb(10,27,137);
     box-shadow: -4px 7px 5px  rgb(10,27,150);
     transition: all 300ms;
+    z-index: 99;
 }
 .first-link:hover {
-    background-color: rgb(247,148,29);
-    box-shadow: 4px -7px 5px  rgb(247,148,70);
+    background-color: rgb(255,148,29);
+    box-shadow: 6px -7px 5px  rgb(247,148,29);
     transition: all 300ms;
 }
 .second-link {
     background-color: rgb(247,148,29);
     transition: all 300ms;
+    z-index: 80;
 }
 .second-link:hover {
-    background-color: rgb(10,27,137);
-    box-shadow: 4px -7px 5px  rgb(247,148,70);
+    background-color: rgb(10,27,100);
     transition: all 300ms;
 }
 .right {
-    background-color: darkred;
     grid-column: 5/13;
     grid-row: 1;
     height: 80hv;
