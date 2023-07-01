@@ -109,3 +109,17 @@ body {
     background-color: darkcyan;
     height: 100vh;
 }
+.losange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    -ms-border-radius: 150px;
+    -o-border-radius: 150px;
+}
